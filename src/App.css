@@ -1,3 +1,16 @@
 .ActiveLink {
   color: red;
 }
+
+.App ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  margin-top: 0px;
+}
+
+.App li{
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
