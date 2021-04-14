@@ -1,0 +1,8 @@
+.ArticleFull {
+    border: 2px solid rgb(146, 177, 187);
+    background-color: rgba(200, 181, 235, 0.959);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    align-items: center;
+}
