@@ -2,6 +2,10 @@
   color: red;
 }
 
+.App{
+  text-align: center;
+}
+
 .App ul {
   display: flex;
   justify-content: center;
