@@ -7,6 +7,7 @@ import NotFound from "./components/NotFound/NotFound";
 import "./App.css";
 import Posts from "./Posts/Posts";
 import Articles from "./components/Articles/Articles";
+import Photos from "./components/Photos/Photos";
 
 function App() {
   const activeLinkStyle = {
@@ -61,6 +62,16 @@ function App() {
             Articles
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            activeStyle={activeLinkStyle}
+            activeClassName="activeLink"
+            to="/photos"
+          >
+            Photos
+          </NavLink>
+        </li>
+
       </ul>
       <Switch>
         <Route path="/about" component={About} />
@@ -68,6 +79,7 @@ function App() {
         <Route path="/posts" component={Posts} />
         <Route exact path="/" component={Home} />
         <Route path="/articles" component={Articles} />
+        <Route path="/photos" component={Photos} />
         <Route path="/" component={NotFound} />
         <Redirect to="/" />
       </Switch>
