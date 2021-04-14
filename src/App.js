@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import "./App.css";
 import Posts from "./Posts/Posts";
+import Articles from "./components/Articles/Articles";
 
 function App() {
   const activeLinkStyle = {
@@ -51,12 +52,22 @@ function App() {
             Posts
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            activeStyle={activeLinkStyle}
+            activeClassName="activeLink"
+            to="/articles"
+          >
+            Articles
+          </NavLink>
+        </li>
       </ul>
       <Switch>
         <Route path="/about" component={About} />
         <Route path="/contacts" component={Contacts} />
         <Route path="/posts" component={Posts} />
         <Route exact path="/" component={Home} />
+        <Route path="/articles" component={Articles} />
         <Route path="/" component={NotFound} />
         <Redirect to="/" />
       </Switch>
